@@ -138,30 +138,3 @@ input[type="text"]:focus {
 	}
 }
 
-@media (min-width: 1070px) {
-	.counter {
-		width: 15%;
-		left: 5%;
-	}
-}
-
-@media (min-width: 1160px) {
-	.counter {
-		width: 15%;
-		left: 8%;
-	}
-}
-
-@media (min-width: 1260px) {
-	.counter {
-		width: 13%;
-		left: 12%;
-	}
-}
-
-@media (min-width: 1370px) {
-	.counter {
-		width: 13%;
-		left: 14%;
-	}
-}
