@@ -1,0 +1,167 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Exo', sans-serif;
+	font-size: 1em;
+}
+.main-container {
+	position: relative;
+}
+
+.board-container {
+	position: relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background-image: url("../img/board.jpg");
+}
+
+#message-area {
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 50%;
+	height: 40px;
+	text-align: center;
+	color: green;
+}
+
+#scoreboard-area {
+	position: absolute;
+	top: 0;
+	right: 10%;
+	width: 30%;
+	height: 40px;
+	border: 1px solid green;
+	text-align: center;
+	color: green;
+}
+
+table {
+	position: absolute;
+	left: 178px;
+	top: 105px;
+	border-spacing: 0px;
+}
+
+td {
+	visibility: hidden;
+	width: 94px;
+	height: 94px;
+}
+
+.fire {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 30%;
+	border: none;
+	text-align: center;
+}
+
+input[type="text"] {
+	border-radius: 8px;
+	font-size: 0.8em;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+	font-size: 0.8em;
+	color: black;
+}
+input[type="text"]::-moz-placeholder {
+	font-size: 0.8em;
+	color: black;
+}
+input[type="text"]:-ms-input-placeholder {
+	font-size: 0.8em;
+	color: black;
+}
+
+input[type="text"]:focus {
+	outline-color: green;
+} 
+
+#fire-button {
+	margin: auto;
+	background: black;
+	border: 1px solid green;
+	color: green;
+}
+
+.alert {
+	display: none;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30%;
+	font-size: 1.3em;
+}
+
+.counter {
+	position: absolute;
+	bottom: 0;
+	left: 1%;
+	width: 18%;
+	height: 40px;
+	border: 1px solid green;
+	text-align: center;
+	color: green;	
+}
+
+.ship {
+	margin-left: auto;
+	margin-right: auto;
+	background: url("../img/ship.png") no-repeat center;
+}
+
+.miss {
+	margin-left: auto;
+	margin-right: auto;
+	background: url("../img/miss.png") no-repeat center;
+}
+
+
+@media (max-width: 960px) {
+	
+	.board-container {
+		display: none;
+	}
+
+	.counter {
+		display: none;
+	}
+
+	.alert {
+		display: block;
+	}
+}
+
+@media (min-width: 1070px) {
+	.counter {
+		width: 15%;
+		left: 5%;
+	}
+}
+
+@media (min-width: 1160px) {
+	.counter {
+		width: 15%;
+		left: 8%;
+	}
+}
+
+@media (min-width: 1260px) {
+	.counter {
+		width: 13%;
+		left: 12%;
+	}
+}
+
+@media (min-width: 1370px) {
+	.counter {
+		width: 13%;
+		left: 14%;
+	}
+}
